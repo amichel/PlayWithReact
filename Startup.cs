@@ -60,6 +60,7 @@ namespace PlayWithReact
                 if (env.IsDevelopment())
                 {
                     spa.UseReactDevelopmentServer(npmScript: "start");
+                    spa.
                 }
             });
         }

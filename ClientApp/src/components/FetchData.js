@@ -69,8 +69,7 @@ function renderReactTable(props) {
                 loading={props.isLoading}
                 pages={Math.ceil(props.totalCount / props.pageSize)}
                 onFetchData={(state, instance) => {
-                    const currentPage = state.page + 1;
-                    props.requestWeatherForecasts(currentPage, state.pageSize);
+                    props.requestWeatherForecasts(state.page + 1, state.pageSize);
                 }}
             /></div>);
 }
